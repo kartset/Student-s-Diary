@@ -18,7 +18,7 @@ public  class MainMenu {
 			}
 
 			else {
-				System.out.print("Do you want to create a record for this roll no ?")
+				System.out.print("Do you want to create a record for this roll no ?");
 				char create = s.nextChar();
 
 				if(create == 'y') {
