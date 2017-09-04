@@ -18,6 +18,6 @@ class StudentDetailConstants {
 	String btech_branch_opt_4 = "Electrical and Electronics Engineering";
 
 	String mtech_branch_opt_1 = "Cyber Security and Computer Networks";
-
+//subclass of student details
 //more to come
 }
