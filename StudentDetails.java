@@ -1,4 +1,4 @@
-class StudentDetails {
+class StudentDetails	 {
 	String student_name;
 	String student_roll;
 	int year_joined;
