@@ -1,4 +1,4 @@
-class StudentDetailConstant {
+class StudentDetailConstants {
 	String course_opt_1 = "B.Tech";
 	String course_opt_2 = "M.Tech";
 	String course_opt_3 = "Biotech";
