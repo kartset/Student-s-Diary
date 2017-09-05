@@ -1,18 +1,19 @@
 import java.util.*;
-class StudentDetails	 {
-	String student_name;
-	String student_roll;
-	int year_joined;
-	String course_joined;
-	String branch;
-	String address;
-	long int student_contact;
-	long int father_contact;
-	long int emergency_contact;
-	String father_name;
-	String local_gaurdian;
-	String hostel_name;
-	String email;
+public class StudentDetails	 {
+	public String student_name;
+	public String student_roll;
+	public int year_joined;
+	public String current_sem;
+	public String course_joined;
+	public String branch;
+	public String address;
+	public long int student_contact;
+	public long int father_contact;
+	public long int emergency_contact;
+	public String father_name;
+	public String local_gaurdian;
+	public String hostel_name;
+	public String email;
 
 //email and phone_no. can be changed once entred
 //use stringBuffer for email then
@@ -31,6 +32,9 @@ class StudentDetails	 {
 
 		System.out.println("Enter the year in which student had joined :-");
 		year_joined = s.nextInt();
+
+		System.out.println("Current Semester :-");
+		current_sem = s.nextLine();
 
 
 		System.out.println("Enter the course that student has joined :-");
@@ -71,9 +75,22 @@ class StudentDetails	 {
 		email = s.nextLine();
 
 
+	}
 
-
-
+	public void showDetails() {
+		System.out.println("Name :- " + student_name +"\nStudent's Roll No :- " + student_roll + "\nYear in which "
+		"student joined :- " + year_joined + "\nCurrent Semester in which student is studying :-" + current_sem + 
+		"\nCourse for which student has joined" + course_joined +  "\nBranch Student has selected " + branch + "\n"
+		"Student's Father's Name :- " + father_name + "\nStudent's Local Guadrdian's Name :- " + local_gaurdian + 
+		"\nEnter Student's Contact Number :- " + student_contact + "\nFather's Contact Number :- " + father_contact + 
+		"\nLocal Guardian's Contact Number :- " + emergency_contact + "\nStudent's Address :- " + address + "\n"
+		"Hostel in which Student is living :- " + hostel_name + "\nStudent's email-id :- " + email);
+	}
 	}
 
 }
+
+
+//implement get set concept for eg set_denominator(int d) {this.deno = d; something} get_denominator() {return deno}
+//divide all of them into certain classes and make student details as the super class of all of them or an abstract class 
+//or an interface

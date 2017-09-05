@@ -5,6 +5,7 @@ public  class MainMenu {
 	public static void main(String[] args) {
 		char search ='y';
 		Scanner s = new Scanner(System.in);
+		StudentDetails staticDetails = new StudentDetails();
 
 		System.out.println("\t\tWelcome to the Student's Diary. Here you can record the activities of the students you are and can keep record of their progress.");
 		do {
@@ -14,7 +15,7 @@ public  class MainMenu {
 		
 
 			if(roll_no exists in records ) {
-				show /*static*/ information about him 
+				show /*static*/ information about him
 			}
 
 			else {
