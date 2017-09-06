@@ -1,5 +1,5 @@
 import java.util.*;
-public class StudentDetails	 {
+public class StudentDetails extends StudentDetailsConstant {
 	public String student_name;
 	public String student_roll;
 	public int year_joined;
@@ -36,20 +36,110 @@ public class StudentDetails	 {
 		System.out.println("Current Semester :-");
 		current_sem = s.nextLine();
 
+		int choice_course,choice_branch;
 
-		System.out.println("Enter the course that student has joined :-");
-		System.out.print("the list");
-		course_joined = s.nextLine();
+		System.out.println("Enter the course that student has joined (1-12) :-"); //here1
+		System.out.print(" 1. B.Tech \n 2. M.Tech \n 3. Biotech \n 4. Masters in biotech \n 5. MA \n 6. BA \n 7. MBA" +
+		"\n 8. BBA \n 9. BSc \n 10. MSc \n 11. BCA \n 12. MCA");
+		
+		choice_course = s.nextInt();
 
-		System.out.println("Enter the branch :-");
-		if(course_joined == ) {
+		switch(choice_course) {
+			case 1 : course_joined = course_opt_1 
+					 break;
+			case 2 : course_joined = course_opt_2
+					 break;
+			case 3 : course_joined = course_opt_3
+					 break;
+			case 4 : course_joined = course_opt_4
+					 break;
+			case 5 : course_joined = course_opt_5
+					 break;
+			case 6 : course_joined = course_opt_6
+					 break;
+			case 7 : course_joined = course_opt_7
+					 break;
+			case 8 : course_joined = course_opt_8
+					 break;
+			case 9 : course_joined = course_opt_9
+					 break;
+			case 10 : course_joined = course_opt_10
+					 break;
+			case 11 : course_joined = course_opt_11
+					 break;
+			case 12 : course_joined = course_opt_12
+					 break;
+			default : System.out.print("Wrong Choice");
+						// send it back to //here1 to follow the code flow
 
 		}
-		else
-			if(course_joined == )
-				//and so on.
-		branch = s.nextLine();
 
+
+		
+		if(course_joined == course_opt_1 ) {
+			System.out.println("Enter the branch (1-4) :-"); //here
+			System.out.print("1. " + btech_branch_opt_1);
+			System.out.print("2. " + btech_branch_opt_2);
+			System.out.print("3. " + btech_branch_opt_3);
+			System.out.print("4. " + btech_branch_opt_4);
+	
+			choice_branch = s.nextInt();
+	
+			switch(choice_banch) {
+				case 1 : branch = btech_branch_opt_1;
+						 break;
+	
+				case 2 : branch = btech_branch_opt_2;
+						 break;
+	
+				case 3 : branch = btech_branch_opt_3;
+						 break;
+	
+				case 4 : branch = btech_branch_opt_4;
+						 break;
+	
+				default : System.out.print("Wrong Choice");
+							//send them back to '//here' and let it follow the code flow again
+			}
+
+		}
+
+		else
+			if(course_joined == course_opt_2 ) {
+			System.out.println("Enter the branch (1-) :-"); //here
+			System.out.print("1. " + mtech_branch_opt_1);
+			//System.out.print("2. " + bmtech_branch_opt_2);
+			//System.out.print("3. " + mtech_branch_opt_3);
+			//System.out.print("4. " + mtech_branch_opt_4);
+	
+			choice_branch = s.nextInt();
+	
+			switch(choice_banch) {
+				case 1 : branch = btech_branch_opt_1;
+						 break;
+	
+				case 2 : //branch = btech_branch_opt_2;
+						 break;
+	
+				case 3 : //branch = btech_branch_opt_3;
+						 break;
+	
+				case 4 : //branch = btech_branch_opt_4;
+						 break;
+	
+				default : System.out.print("Wrong Choice");
+							//send them back to '//here' and let it follow the code flow again
+			}
+
+
+			}
+
+
+			else {
+				System.out.print("This is else clause");
+			}
+				//and so on.
+		
 		System.out.println("Enter student's Father's name :-");
 		father_name = s.nextLine();
 

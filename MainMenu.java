@@ -14,8 +14,8 @@ public  class MainMenu {
 			System.out.print(roll_no);
 		
 
-			if(roll_no exists in records ) {
-				show /*static*/ information about him
+			if(roll_no exists in records; ) {
+				staticDetails.showDetails();
 			}
 
 			else {
@@ -23,7 +23,7 @@ public  class MainMenu {
 				char create = s.nextChar();
 
 				if(create == 'y') {
-					ask /*for*/ all /*static*/ info about that roll no
+					staticDetails.enterDetails();
 					System.out.print("Created!");
 					
 				}
@@ -35,7 +35,7 @@ public  class MainMenu {
 			}
 		}
 
-		while(search == 'y')
+		while(search == 'y');
 		
 	}
 	
