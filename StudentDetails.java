@@ -184,3 +184,5 @@ public class StudentDetails extends StudentDetailsConstant {
 //implement get set concept for eg set_denominator(int d) {this.deno = d; something} get_denominator() {return deno}
 //divide all of them into certain classes and make student details as the super class of all of them or an abstract class 
 //or an interface
+//break it into different classes and make this class as the parent class
+//make a sub class to this which will hold class details of the student like room no, section, current semester and all
