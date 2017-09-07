@@ -33,6 +33,8 @@ public class StudentActivities {
 				 		books.remove(i);
 				 	}
 				 }
+				 //another thing we can do here is that we can just list the book issued by the students and 
+				 //can ask which one you want to return. 
 				 break;
 
 		case 3 : System.out.print("Enter the name of the book you want to donate :- ");
