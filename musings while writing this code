@@ -8,11 +8,15 @@ on how to store entered data
 5. make a file for every action or everyproperty related to student and arrange all the properties of different objects in that one file.
 5. In a Json file somehow
 6.hashtables + 5th one
-7. 
+7. make a file for every roll no and store details of every actvity by keeping that activity related to the data somehow using hastables or json files
 
 
 
 
 on references --> what to read
-1. read that princeton university doc
+1. read that princeton university doc (http://introcs.cs.princeton.edu/java/home/)
 2. read that stack overflow ans. related to storing data
+3.http://docs.oracle.com/javase/specs/jls/se8/html/index.html
+4.https://github.com/cirosantilli/java-cheat
+5. 	https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/
+6.http://docs.oracle.com/javase/1.5.0/docs/tooldocs/windows/javadoc.html#javadoctags

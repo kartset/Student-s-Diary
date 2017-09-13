@@ -8,7 +8,7 @@ public class StudentActivities {
 	int choice;
 	int i=0;
 	String return_book;
-	String donate_book; 
+	String donate_book;
 	Scanner input = new Scanner(System.in);
 
 	System.out.print("Enter your choice :- \n1.Isuue a Book\n2.Return a book\n3.Donate a book");
@@ -33,8 +33,8 @@ public class StudentActivities {
 				 		books.remove(i);
 				 	}
 				 }
-				 //another thing we can do here is that we can just list the book issued by the students and 
-				 //can ask which one you want to return. 
+				 //another thing we can do here is that we can just list the book issued by the students and
+				 //can ask which one you want to return.
 				 break;
 
 		case 3 : System.out.print("Enter the name of the book you want to donate :- ");
@@ -53,11 +53,22 @@ public class StudentActivities {
 
 	}
 
-	//curricular-activities--> cgpa,
-	//extracurricular-activities or co curricular activities --> sports and games , tech cometition,internships,artistic,litrary,science,tech, performing arts(debate,drama,plays, band, dance, choir,cinema,modelling,theatre), social work,cultural fest , tech fest, topic-specific clubs, work programs, media(journalism , rj and all), political Interest
-	//after school activities --> outdoor education such as scouting, girl's guides, boys' brigade, camp fire, 4-h, cadets, gitavarsham aand all, attending conferences finicial litracy, and all , Volunteering
+	//curricular-activities--> cgpa, internships ,
+	//extracurricular-activities or co curricular activities --> sports and games , tech cometition,internships,
+					  //artistic,litrary,science,tech, performing arts(debate,drama,plays, band, dance, choir,cinema,
+					 //modelling,theatre), social work,cultural fest , tech fest, topic-specific clubs, work programs,
+	            	 //media(journalism , rj and all), political Interest
+	//after school activities --> outdoor education such as scouting, girl's guides, boys' brigade,
+								//camp fire, 4-h, cadets, gitavarsham aand all, attending conferences finicial litracy,
+								//and all , Volunteering
+
+
 	//fine pending i.e. arrears
 	//charges against student
+
+	//make another class of this function and make current class as parent class
+
+
 	//scholarship details
 
 }
