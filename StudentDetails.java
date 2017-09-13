@@ -14,17 +14,26 @@ public class StudentDetails extends StudentDetailsConstant {
 	public String local_gaurdian;
 	public String hostel_name;
 	public String email;
+	public String student_gender;
+
+	//make a class academic details and spare every academic type thing into that
+	//make a class for contact details and spare detials about that from this class
+	//make a class other details and pace rest of the details into that;
+	//make this class to the super class of that
 
 //email and phone_no. can be changed once entred
 //use stringBuffer for email then
 
 	public void enterDetails() {
-		Scanner s = new Scanner(System.in);	
-		
+		Scanner s = new Scanner(System.in);
+
 		System.out.print("Enter some static details about student :-");
 
 		System.out.println("Enter student's name :-");
 		student_name = s.nextLine();
+
+		System.out.println("Enter student's gender (Male/Female/Other) :-");
+		student_gender = s.nextLine();
 
 		System.out.println("Enter student's roll no. :-");
 		student_roll = s.nextLine();
@@ -41,11 +50,11 @@ public class StudentDetails extends StudentDetailsConstant {
 		System.out.println("Enter the course that student has joined (1-12) :-"); //here1
 		System.out.print(" 1. B.Tech \n 2. M.Tech \n 3. Biotech \n 4. Masters in biotech \n 5. MA \n 6. BA \n 7. MBA" +
 		"\n 8. BBA \n 9. BSc \n 10. MSc \n 11. BCA \n 12. MCA");
-		
+
 		choice_course = s.nextInt();
 
 		switch(choice_course) {
-			case 1 : course_joined = course_opt_1 
+			case 1 : course_joined = course_opt_1
 					 break;
 			case 2 : course_joined = course_opt_2
 					 break;
@@ -75,29 +84,29 @@ public class StudentDetails extends StudentDetailsConstant {
 		}
 
 
-		
+
 		if(course_joined == course_opt_1 ) {
 			System.out.println("Enter the branch (1-4) :-"); //here
 			System.out.print("1. " + btech_branch_opt_1);
 			System.out.print("2. " + btech_branch_opt_2);
 			System.out.print("3. " + btech_branch_opt_3);
 			System.out.print("4. " + btech_branch_opt_4);
-	
+
 			choice_branch = s.nextInt();
-	
+
 			switch(choice_banch) {
 				case 1 : branch = btech_branch_opt_1;
 						 break;
-	
+
 				case 2 : branch = btech_branch_opt_2;
 						 break;
-	
+
 				case 3 : branch = btech_branch_opt_3;
 						 break;
-	
+
 				case 4 : branch = btech_branch_opt_4;
 						 break;
-	
+
 				default : System.out.print("Wrong Choice");
 							//send them back to '//here' and let it follow the code flow again
 			}
@@ -111,22 +120,22 @@ public class StudentDetails extends StudentDetailsConstant {
 			//System.out.print("2. " + bmtech_branch_opt_2);
 			//System.out.print("3. " + mtech_branch_opt_3);
 			//System.out.print("4. " + mtech_branch_opt_4);
-	
+
 			choice_branch = s.nextInt();
-	
+
 			switch(choice_banch) {
 				case 1 : branch = btech_branch_opt_1;
 						 break;
-	
+
 				case 2 : //branch = btech_branch_opt_2;
 						 break;
-	
+
 				case 3 : //branch = btech_branch_opt_3;
 						 break;
-	
+
 				case 4 : //branch = btech_branch_opt_4;
 						 break;
-	
+
 				default : System.out.print("Wrong Choice");
 							//send them back to '//here' and let it follow the code flow again
 			}
@@ -139,7 +148,7 @@ public class StudentDetails extends StudentDetailsConstant {
 				System.out.print("This is else clause");
 			}
 				//and so on.
-		
+
 		System.out.println("Enter student's Father's name :-");
 		father_name = s.nextLine();
 
@@ -168,21 +177,25 @@ public class StudentDetails extends StudentDetailsConstant {
 	}
 
 	public void showDetails() {
-		System.out.println("Name :- " + student_name +"\nStudent's Roll No :- " + student_roll + "\nYear in which "
-		"student joined :- " + year_joined + "\nCurrent Semester in which student is studying :-" + current_sem + 
-		"\nCourse for which student has joined" + course_joined +  "\nBranch Student has selected " + branch + "\n"
-		"Student's Father's Name :- " + father_name + "\nStudent's Local Guadrdian's Name :- " + local_gaurdian + 
-		"\nEnter Student's Contact Number :- " + student_contact + "\nFather's Contact Number :- " + father_contact + 
-		"\nLocal Guardian's Contact Number :- " + emergency_contact + "\nStudent's Address :- " + address + "\n"
-		"Hostel in which Student is living :- " + hostel_name + "\nStudent's email-id :- " + email);
+		System.out.println("Name :- " + student_name +"\nStudent's Roll No :- " + student_roll + "\nGneder" +
+		"\nYear in which student joined :- " + year_joined + "\nCurrent Semester in which student is studying :-" +
+		current_sem + "\nCourse for which student has joined" + course_joined +  "\nBranch Student has selected " +
+		branch + "\nStudent's Father's Name :- " + father_name + "\nStudent's Local Guadrdian's Name :- " +
+		local_gaurdian + "\nEnter Student's Contact Number :- " + student_contact + "\nFather's Contact Number :- " +
+		father_contact + "\nLocal Guardian's Contact Number :- " + emergency_contact + "\nStudent's Address :- " +
+		address + "\nHostel in which Student is living :- " + hostel_name + "\nStudent's email-id :- " + email);
 	}
 	}
-
+	//a method editDetails(); would be here;
 }
+/*make a function to operate on student information automatically like if current_sem is 8th and student is passed in
+  every subject till now then take his data and place it in alumni thing and discover more functions like this
+
+  */
 
 
 //implement get set concept for eg set_denominator(int d) {this.deno = d; something} get_denominator() {return deno}
-//divide all of them into certain classes and make student details as the super class of all of them or an abstract class 
+//divide all of them into certain classes and make student details as the super class of all of them or an abstract class
 //or an interface
 //break it into different classes and make this class as the parent class
 //make a sub class to this which will hold class details of the student like room no, section, current semester and all
