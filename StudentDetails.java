@@ -6,7 +6,7 @@ public class StudentDetails extends StudentDetailsConstant {
 	public String current_sem;
 	public String course_joined;
 	public String branch;
-	public String address;
+	public String address; //or address can be another function or class or something which includes house no, street no, locality, zip code or pin code or postal code;
 	public long int student_contact;
 	public long int father_contact;
 	public long int emergency_contact;
@@ -199,3 +199,6 @@ public class StudentDetails extends StudentDetailsConstant {
 //or an interface
 //break it into different classes and make this class as the parent class
 //make a sub class to this which will hold class details of the student like room no, section, current semester and all
+
+
+//bank details of a student
